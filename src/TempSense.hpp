@@ -6,7 +6,7 @@
 using namespace std;
 
 //need 6 analog pins, one for each thermistor
-#define TR0 A0
+#define TR0 A7
 #define TR1 A1
 #define TR2 A2
 #define TR3 A3
@@ -34,7 +34,7 @@ class ThermistorArray{
         float minTemp;
         float maxTemp;
         float totalTemp;
-        int numSamples;
+        long numSamples;
     
 };
 

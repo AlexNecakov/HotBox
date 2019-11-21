@@ -3,13 +3,22 @@
 ThermistorArray::ThermistorArray(){
   numSamples = 0;
   totalTemp = 0;
+  maxTemp = INT_MIN;
+  minTemp = INT_MAX;
 }
 
 float ThermistorArray::convertReading(float reading){
   float converted;
   converted = (1023 / reading)  - 1;     // (1023/ADC - 1) 
   converted = SRES / converted;  // 10K / (1023/ADC - 1)
-  return converted;
+  float steinhart;
+  steinhart = converted / NRES;     // (R/Ro)
+  steinhart = log(steinhart);                  // ln(R/Ro)
+  steinhart /= BETA;                   // 1/B * ln(R/Ro)
+  steinhart += 1.0 / (25 + 273.15); // + (1/To)
+  steinhart = 1.0 / steinhart;                 // Invert
+  steinhart -= 273.15;  
+  return steinhart;
 }
 
 void ThermistorArray::refresh(){
@@ -37,7 +46,7 @@ void ThermistorArray::refresh(){
   float temp5 = convertReading(reading5);
 
   currTemp = float((temp0+temp1+temp2+temp3+temp4+temp5)/N);
-  currTemp = temp0;
+  //currTemp = (temp0);
 
   if (currTemp < minTemp){
     minTemp = currTemp;
