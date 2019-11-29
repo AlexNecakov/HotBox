@@ -1,0 +1,23 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of Project [Adafruit Feather M0 Adalogger.PrjPcb]
+   Generated File[Adafruit Feather M0 Adalogger.GTO]
+   Generated File[Adafruit Feather M0 Adalogger.GTS]
+   Generated File[Adafruit Feather M0 Adalogger.GTL]
+   Generated File[Adafruit Feather M0 Adalogger.GBL]
+   Generated File[Adafruit Feather M0 Adalogger.GBS]
+   Generated File[Adafruit Feather M0 Adalogger.GBO]
+   Generated File[Adafruit Feather M0 Adalogger.GM1]
+   Generated File[Adafruit Feather M0 Adalogger.GM7]
+   Generated File[Adafruit Feather M0 Adalogger.GM8]
+   Generated File[Adafruit Feather M0 Adalogger.GD1]
+   Generated File[Adafruit Feather M0 Adalogger.GG1]
+   Generated File[Adafruit Feather M0 Adalogger.RUL]
+   Generated File[Adafruit Feather M0 Adalogger.EXTREP]
+   Generated File[Adafruit Feather M0 Adalogger.REP]
+
+
+Files Generated   : 14
+Documents Printed : 0
+
+Finished Output Generation At 9:49:59 PM On 11/28/2019

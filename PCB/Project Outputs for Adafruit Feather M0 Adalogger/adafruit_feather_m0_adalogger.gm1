@@ -3,10 +3,10 @@
 %SFA1B1*%
 
 %IPPOS*%
-%ADD24C,0.004000*%
+%ADD32C,0.004000*%
 %LNadafruit_feather_m0_adalogger-1*%
 %LPD*%
-G54D24*
+G54D32*
 X0Y0D02*
 Y01585D01*
 X02825*
